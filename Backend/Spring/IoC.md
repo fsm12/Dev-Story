@@ -19,7 +19,39 @@ B b = new B();
 
 #### IoC를 제대로 설명하면?
 IoC는 스프링이 갖는 핵심적인 기능.  
+
 자바의 객체 생성이나 의존관계는 보통 개발자가 만들고 제어했지만, 대부분은 `Servlet Container`에게 넘어갔음. 단, `Servlet`과 `EJB`에 대한 제어권을 제외하곤 개발자가 제어권을 가진다.
+
 스프링에서도 객체의 생성과 생명주기를 관리하는 기능을 담당하는 `Spring Continer`가 있는데 `IoC Container`라 부르기도 한다.
 
+객체간의 관계를 느슨하게 연결(Loose Coupling)할 수 있도록 `IoC`의 구현방법 중 하나인 `DI`를 이용함
+
 </br></br>
+
+#### IoC 의 유형은?
+<img src = "https://github.com/fsm12/Dev-Story/assets/74345771/89826423-8904-411d-91f0-51ddafb17f97" alt="" width="50%">
+
+`IoC`는 크게 나누면 `Dependency Lookup`과 `Dependency Injection`으로 나눌 수 있음
+
+</br>
+
+#### `Dependency Lookup`
+컨테이너가 `lookup context`를 통해 필요한 `Resource`나 `Object`를 얻는 방식
+
+DBCP(DBMS Connection Pooling)에서 JNDI를 미리 만들어놓고 찾아서 썼음  
+이 때, `Lookup`한 `Object`를 필요한 타입으로 형변환을 해 줘야 했다.
+
+</br>
+
+#### `Dependency Injection`
+`Object`에 `lookup` 코드를 사용하지 않고 컨테이너가 직접 의존 구조를 `Object`에 설정할 수 있도록 지정해 주는 방식  
+
+`필드주입 / Setter 주입 / 생성자 주입 / 일반 메서드 주입` 으로 나뉜다.
+
+</br></br>
+
+
+
+
+
+
