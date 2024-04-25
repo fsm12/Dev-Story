@@ -36,3 +36,28 @@
 2. 개발에 필요한 많은 라이브러리 지원
 3. 모든 플랫폼에서 스프링 프레임워크를 사용할 수 있음
 
+</br></br>
+<hr/>
+
+### Spring Framework를 설명하면?
+엔터프라이즈급 애플리케이션을 만들기 위해 모든 기능을 종합적으로 제공하는 경량화 솔루션으로, JEE기반의 기능들 뿐만아니라 `DI`나 `AOP` 등의 기능도 지원한다.
+
+***참고) `DI`는 스프링만의 기능이지만, `AOP`는 아님***
+
+</br>
+
+프레임워크는 쉽게말해 `뼈대`이기 때문에 자동으로 만들어줌으로서,
+복잡하고 실수하기 쉬운 `Low Level`에 신경쓰지 않고 `Business Logic`개발에 전념할 수 있도록 해줌.
+
+</br>
+
+#### Spring의 삼각형
+<img src ="https://github.com/fsm12/Dev-Story/assets/74345771/21617107-dfb1-4fdc-b904-b1bdad484c1d" alt="Spring의 삼각형" width="30%">
+
+- ***POJO (Plain Old Java Object)***
+- ***PSA (Portable Service Abstraction)*** : 환경 및 세부 기술의 변경이 일어나더라도 일관된 방식으로 데이터에 접근할 수 있게 함
+- ***IoC / DI*** 
+- ***AOP (Aspect Oriented Programming)***
+
+</br>
+
